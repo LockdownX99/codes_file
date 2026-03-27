@@ -1,6 +1,6 @@
 #contener{
   display:flex;
-  flex-wrap:flex;
+  flex-wrap:wrap;
 }
 #contener div{
   background-color:springgreen;
