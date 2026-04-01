@@ -1,0 +1,12 @@
+functon -> let's you creat function.
+function nameOfFunction(){
+what this function will do ;
+}
+. -> acesses inside of an eliment.
+document -> select the whole document.
+.querySelector("html tag,#id,.class") -> let's you look through a html document's all eliment.
+.innerHTML -> inside of this html tag,id or class.
+=  -> equal to.
+.style -> accecing to style tag of this html eliment.
+.color -> accesing to color of this html eliment.
+ .include -> check is something is included or not.

@@ -1,0 +1,70 @@
+body{
+  background-color:white;
+  color: black;
+  
+}
+#lebel{
+  background-color:#902;
+  padding: 30px;
+  border:1px solid #789;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  height: 60px;
+}
+
+#switch{
+  padding: 10px 30px;
+  border: 2px solid ;
+  border-radius: 10px;
+
+}
+
+#radio-container{
+  
+}
+
+.container{
+  background-color:#ab97;
+  margin-top: 30px;
+  padding:10px 0;
+  width: 100%;
+  overflow-x: auto;
+  border:1px solid #ccc;
+  cursor: grab;
+}
+.container:active {
+  cursor: grabbing;
+}
+
+
+.ruler{
+  display: inline-block;
+  white-space: nowrap;    /* Prevents numbers from wrapping to the next line */
+  padding-left: 10px;
+}
+
+#red-line{
+  background-color: red;
+  height:100%;
+  width: 10px;
+}
+
+
+
+
+
+
+
+/*
+#box{
+  background: url('/image/001.jpeg');
+  background-color:#fff90785;
+  margin-top:30px ;
+  height: 220px;
+  width: 100%;
+  overflow-x:auto; /*Enable horizontal scrollbar*/
+  background-attachment:;
+  direction:; /* force to start from direction like (rtl and ltl)*/
+}
+*/

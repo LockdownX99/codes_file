@@ -1,0 +1,8 @@
+// Select the button using the DOM
+const startButton = document.getElementById('startBtn');
+
+// Add the click event listener
+startButton.addEventListener('click', () => {
+    // This line handles the redirection
+    window.location.href = 'secondpage.html'; 
+});

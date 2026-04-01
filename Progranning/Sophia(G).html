@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sophia AI</title>
+    <style>
+        body { background: #121212; color: white; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; }
+        #chat-box { width: 90%; height: 300px; border: 1px solid #333; overflow-y: scroll; margin-top: 20px; padding: 10px; border-radius: 10px; background: #1e1e1e; }
+        .user { color: #00ffcc; margin: 5px 0; }
+        .sophia { color: #ff0077; margin: 5px 0; font-weight: bold; }
+        input { width: 80%; padding: 10px; margin-top: 10px; border-radius: 5px; border: none; }
+        button { padding: 10px 20px; margin-top: 10px; background: #6200ea; color: white; border: none; border-radius: 5px; }
+        
+        /* A little CSS animation for Sophia "thinking" */
+        .thinking { animation: pulse 1.5s infinite; }
+        @keyframes pulse { 0% { opacity: 0.5; } 50% { opacity: 1; } 100% { opacity: 0.5; } }
+    </style>
+</head>
+<body>
+
+    <h2>Sophia AI v1.0</h2>
+    <div id="chat-box"></div>
+    <input type="text" id="user-input" placeholder="Say hello to Sophia...">
+    <button onclick="sendMessage()">Send</button>
+
+    <script>
+        function sendMessage() {
+            let input = document.getElementById("user-input");
+            let box = document.getElementById("chat-box");
+            
+            if (input.value === "") return;
+
+            // Show User Message
+            box.innerHTML += `<div class="user"><b>You:</b> ${input.value}</div>`;
+            
+            // Sophia's "Brain" (JavaScript version of your Python logic)
+            let response = "I'm still learning that! Tell me more.";
+            let lowerInput = input.value.toLowerCase();
+
+            if (lowerInput.includes("hello") || lowerInput.includes("hey")) {
+                response = "Hey there! I'm back and ready to chat.";
+            } else if (lowerInput.includes("how are you")) {
+                response = "I'm feeling digital and dangerous! How are you?";
+            }
+
+            // Show Sophia's Message
+            setTimeout(() => {
+                box.innerHTML += `<div class="sophia">Sophia: ${response}</div>`;
+                box.scrollTop = box.scrollHeight; // Auto-scroll to bottom
+            }, 500);
+
+            input.value = ""; // Clear input
+        }
+    </script>
+</body>
+</html>

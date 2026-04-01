@@ -1,0 +1,173 @@
+body{ 
+  color:white; 
+  background-color: black;
+  
+}
+
+h3{
+  text-align: center;
+  
+}
+
+h2{
+  text-align: center;
+}
+
+.loader{
+  text-align: center;
+  padding: auto;
+  color:white;
+  background-color:red;
+  transition-duration: 0.5s;
+}
+
+.loader:hover{
+  color:green;
+  background-color:pink;
+  font-size: 55px;
+ /* font-style:italic;*/
+ text-align: center;
+/* margin:0% 35% 0% 35%;*/
+}
+#img_tree{
+  width:100px;
+  height:100px;
+  transition-duration: 0.5s;
+}
+#img_tree:hover{
+  width:100%;
+  height:100%;
+  border: 2px solid purple;
+  float:_;
+  margin:_;
+}
+#frist_div{
+  color:_;
+  background-color:blue;
+
+}
+#frist_div:hover{
+  background-color: green;
+ /* transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function:ease-in;
+  transition-delay:1s;
+  */
+  transition: all 1s ease-in 1s;
+  
+}
+
+
+@keyframes roll{
+    0%{
+      background-color: red;
+    }
+    25%{
+      background-color: yellow;
+    }
+    50%{
+     background-color: blue; 
+    }
+    100%{
+      background-color: black;
+    } 
+}
+
+@keyframes fillup{
+  0%{
+   /* background-color:red;
+    padding:0px;*/
+    
+  background: linear-gradient(to right, #4CAF50 0%, black 20%);
+    
+  }
+    
+  20%{
+    background:linear-gradient(
+    to right, yellow 20%, black 40%
+    );
+  }
+  40%{
+    background:linear-gradient(
+    to right, pink 40%, black 60%
+    );
+    
+  }
+  60%{
+    
+    background:linear-gradient(
+    to right, blue 60%, black 80%
+    );
+    
+  }
+  80%{
+    
+  background:linear-gradient(
+  to right, brown 80%, black 100%
+    
+    );
+    
+  
+  }
+  
+  100%{
+    background:linear-gradient(
+    to right, red 100% 
+    );
+  }
+}
+    
+.bar{
+  border: 2px solid red;
+  border-radius:10px;
+  margin:40px;
+  height:20px;
+  background-color:black;
+  
+}
+
+.bar:hover{
+  border: 2px solid red;
+  border-radius:10px;
+  margin:40px;
+  height:20px;
+  animation: fillup 20s 0s ;
+}
+.list{
+  padding: 0;
+  margin: 2px;
+}
+
+.list_a{
+  text-decoration: none;
+  /*list-style-type:none ;*/
+  text-align:center;
+  color: white; 
+  background-color: purple;
+  border: 2px solid #f0f;
+  margin: 2px 2px;
+  padding: 5px;
+  float: none;
+  display: flex;
+  flex-direction: column;
+/*  gap: 10px;
+ justify-content: center; 
+  align-content: center; */
+  transition-duration:0.2s;
+
+}
+
+.list_a:hover{
+  text-decoration: none;
+  text-align:center;
+  color: white; 
+  background-color: purple;
+  border: 2px solid #f0f;
+  margin: 2px 2px;
+  padding: 20px;
+  float: none;
+  display: flex;
+  flex-direction: column;
+  
+}
+

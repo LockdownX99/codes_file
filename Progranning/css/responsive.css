@@ -1,0 +1,17 @@
+#contener{
+  display:flex;
+  flex-wrap:wrap;
+}
+#contener  div{
+  background-color: springgreen;
+  width: 200px;
+  height: 200px;
+  margin:3px;
+  padding:#;
+  align-content: center;
+}
+... {
+  width: 198px;
+  height: 198px;
+  margin:3px;
+}

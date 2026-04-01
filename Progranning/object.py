@@ -1,0 +1,6 @@
+class person:
+  ...
+  
+  
+  
+print("hello")
