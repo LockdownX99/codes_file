@@ -1,0 +1,15 @@
+japanes = {"a":"ka","b":"tu","c":"mi","d":"ti","e":"ku","f":"lu","g":"ji","h":"ri","i":"mi","j":"ju","k":"ki","l":"no","m":"mo","n":"to"}
+
+name = input("your name: ")
+japanese_name = ""
+
+# Loop through each letter in the name provided
+for char in name.lower():
+    # Check if the letter exists in your dictionary
+    if char in japanes:
+        japanese_name += japanes[char]
+    else:
+        # If the letter isn't in the dict (like 's' or 'o'), keep the original letter
+        japanese_name += char
+
+print(f"Your name in this cipher is: {japanese_name}")

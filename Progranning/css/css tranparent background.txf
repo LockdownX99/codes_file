@@ -1,0 +1,8 @@
+h1{
+  font-family:"Noto sans",Sans-Serif;
+  background-image:url('../image/002.jpg') ;
+  background-size:cover;
+  background-clip:text;
+  color:transparent ;
+  font-size: 200px;
+}

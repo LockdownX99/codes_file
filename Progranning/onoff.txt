@@ -1,0 +1,26 @@
+// Select the button
+const btn = document.getElementById('toggleBtn');
+
+btn.addEventListener('click', function(event) {
+    // Prevent the page from refreshing (since it's a submit tag)
+    event.preventDefault();
+
+    // Toggle logic
+    if (btn.value === "OFF") {
+        btn.value = "ON";
+        btn.style.backgroundColor = "#4CAF50"; // Green for ON
+        btn.style.color = "white";
+    } else {
+        btn.value = "OFF";
+        btn.style.backgroundColor = ""; // Reset to default
+        btn.style.color = "";
+    }
+});
+
+
+
+
+
+
+document.querySelector("button").addEventListener("click",function(){
+        document.querySelector("body").style.backgroundColor="green";})

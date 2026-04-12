@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Time Display</title>
+</head>
+<body>
+
+    <h1>Current Time: <span id="clock"></span></h1>
+
+    <script>
+        // Function to update the clock element
+        function updateClock() {
+            // Create a new Date object to get the current date and time
+            const now = new Date();
+            // Format the time as a human-readable string (e.g., "10:30:25 AM")
+            const formattedTime = now.toLocaleTimeString(); 
+            // Get the element with the id 'clock' and update its text content
+            document.getElementById('clock').textContent = formattedTime;
+        }
+
+        // Call the updateClock function once immediately when the page loads
+        updateClock();
+
+        // Call the updateClock function every 1000 milliseconds (1 second)
+        setInterval(updateClock, 1000);
+    </script>
+
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html len="en">
+  <head>
+    <title>
+    Time
+    </title>
+  <link rel="" type="" href=""/>
+  </head>
+</html>

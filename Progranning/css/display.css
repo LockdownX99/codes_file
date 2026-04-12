@@ -1,0 +1,42 @@
+/* short display */
+h1{
+  background-color: red;
+  border: 1px solid ;
+  display:block flow;
+}
+/*short display*/
+display: none;
+display: contents;
+display: block;
+display: flow-root;
+display: inline;
+display: inline-block;
+display: list-item;
+display: inline list-item;
+display: flex;
+display: inline-flex;
+display: grid;
+display: inline-grid;
+display: table;
+display: inline-table;
+
+/* full display */
+display: block flow;
+display: block flow-root;
+display: inline flow;
+display: inline flow-root;
+display: block flow list-item;
+display: inline flow list-item;
+display: block flex;
+display: inline flex;
+display: block grid;
+display: inline grid;
+display: block table;
+display: inline table;
+
+/* global values */
+display: inherit;
+display: initial;
+display: revert;
+display: revert-layer;
+display: unset;
